@@ -53,6 +53,10 @@ dependencies {
     implementation 'com.facebook.fresco:webpsupport:0.14.1'
     //支持okhttp3，需要添加
     implementation 'com.facebook.fresco:imagepipeline-okhttp3:0.14.1'
+    
+    //picasso
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+
 }
 repositories {
     maven{ url'http://maven.aliyun.com/nexus/content/groups/public/' }
