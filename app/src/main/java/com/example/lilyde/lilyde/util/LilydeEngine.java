@@ -20,6 +20,7 @@ import com.bumptech.glide.load.engine.cache.MemorySizeCalculator;
 import com.bumptech.glide.load.resource.bitmap.BitmapResource;
 import com.bumptech.glide.load.resource.bitmap.Downsampler;
 import com.bumptech.glide.request.Request;
+import com.facebook.common.memory.ByteArrayPool;
 
 import java.io.File;
 import java.io.IOException;

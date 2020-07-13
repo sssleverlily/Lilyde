@@ -16,6 +16,18 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    private void glideTest(){
+
+    }
+
+    private void frescoTest(){
+
+    }
+
+    private void lilydeTest(){
+
+    }
+
     /**
      * 我想实现的是:
      */

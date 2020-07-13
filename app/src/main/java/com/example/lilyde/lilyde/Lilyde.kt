@@ -1,9 +1,12 @@
 package com.example.lilyde
 
 import android.annotation.SuppressLint
+import android.content.ComponentCallbacks2
 import android.content.Context
+import android.content.res.Configuration
 import android.graphics.drawable.Drawable
 import android.media.MediaScannerConnection
+import android.os.Build
 import android.os.Environment
 import androidx.annotation.ColorInt
 import androidx.annotation.DrawableRes
@@ -236,6 +239,27 @@ object Lilyde {
             Glide.with(context).load(config.drawableId)
         } else {
             Glide.with(context).load(config.url)
+        }
+        if (Build.VERSION_CODES.ICE_CREAM_SANDWICH <= Build.VERSION.SDK_INT) {
+            context.getApplicationContext()
+                    .registerComponentCallbacks(object : ComponentCallbacks2 {
+                        override fun onTrimMemory(level: Int) {
+                            //置于后台时，清除缓存
+                            if(level== ComponentCallbacks2.TRIM_MEMORY_UI_HIDDEN){
+                                Glide.get(context).clearMemory()
+                            }
+                            Glide.get(context).trimMemory(level)
+                        }
+
+                        override fun onConfigurationChanged(newConfig: Configuration) {
+
+                        }
+
+                        override fun onLowMemory() {
+                            //低内存时，清除缓存
+                            Glide.get(context).clearMemory()
+                        }
+                    })
         }
         glideRequest.apply {
             when (config.cacheStrategy) {

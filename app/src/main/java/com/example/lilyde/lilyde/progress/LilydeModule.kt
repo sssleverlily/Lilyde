@@ -14,13 +14,20 @@ import com.bumptech.glide.module.AppGlideModule
 import com.example.lilyde.http.OkHttpUrlLoader
 import java.io.InputStream
 
+/**
+ * 自定义glidemodule
+ */
 @GlideModule(glideName = "LilydeApp")
 class LilydeModule : AppGlideModule() {
     override fun applyOptions(context: Context, builder: GlideBuilder) {
         builder.setDiskCache(InternalCacheDiskCacheFactory(context, "Glide", IMAGE_DISK_CACHE_MAX_SIZE.toLong()))
+        //设置Glide内存缓存大小
         val calculator = MemorySizeCalculator.Builder(context).build()
         val defaultMemoryCacheSize = calculator.memoryCacheSize
         val defaultBitmapPoolSize = calculator.bitmapPoolSize
+
+        //要用默认值作为基准，然后调整它。
+        // 比如，如果你认为你的 app 需要 20% 大的缓存作为 Glide 的默认值，用我们上面的变量去计算他们
         val customMemoryCacheSize = (1.2 * defaultMemoryCacheSize).toInt()
         val customBitmapPoolSize = (1.2 * defaultBitmapPoolSize).toInt()
         builder.setMemoryCache(LruResourceCache(customMemoryCacheSize.toLong()))

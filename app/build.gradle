@@ -53,9 +53,13 @@ dependencies {
     implementation 'com.facebook.fresco:webpsupport:0.14.1'
     //支持okhttp3，需要添加
     implementation 'com.facebook.fresco:imagepipeline-okhttp3:0.14.1'
-    
+
     //picasso
     implementation 'com.squareup.picasso:picasso:2.5.2'
+    // For developers using AndroidX in their applications
+    implementation 'pub.devrel:easypermissions:3.0.0'
+    //imageloader
+    implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
 
 }
 repositories {

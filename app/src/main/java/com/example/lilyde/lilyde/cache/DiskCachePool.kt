@@ -1,7 +1,12 @@
 package com.example.lilyde.lilyde.cache
 
+import android.content.ComponentCallbacks2
+import android.content.res.Configuration
+import android.os.Build
+import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.cache.DiskCache
 import com.bumptech.glide.load.engine.cache.DiskCacheAdapter
+import com.example.lilyde.Lilyde.clearMemory
 import java.util.concurrent.ConcurrentHashMap
 
 class DiskCachePool {
