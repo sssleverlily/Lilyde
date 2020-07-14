@@ -31,6 +31,9 @@ import com.example.lilyde.progress.OnProgressListener
 import com.example.lilyde.transformation.BlurTransformation
 import com.example.lilyde.transformation.GrayscaleTransformation
 import com.example.lilyde.transformation.RoundedCornersTransformation
+import com.facebook.drawee.backends.pipeline.Fresco
+import com.facebook.drawee.interfaces.DraweeController
+import com.facebook.drawee.view.SimpleDraweeView
 import pub.devrel.easypermissions.AfterPermissionGranted
 import pub.devrel.easypermissions.EasyPermissions
 
@@ -41,6 +44,7 @@ class MainActivity : AppCompatActivity(){
     var url4 = "http://img.mp.itc.cn/upload/20170311/33f2b7f7ffb04ecb81e42405e20b3fdc_th.gif"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        Fresco.initialize(this)
         setContentView(R.layout.activity_main)
         initView()
     }
@@ -51,7 +55,8 @@ class MainActivity : AppCompatActivity(){
             override fun onProgress(isComplete: Boolean, percentage: Int, bytesRead: Long, totalBytes: Long) {
                 // 跟踪进度
                 if (isComplete) {
-                    circleProgressView.visibility = View.GONE
+                    //网络太快看不见进度条，先设置看见
+                    circleProgressView.visibility = View.VISIBLE
                 }
                 circleProgressView.progress = percentage
             }
@@ -91,6 +96,20 @@ class MainActivity : AppCompatActivity(){
         iv_11.loadImage(this, R.drawable.ic_launcher_background)
         iv_12.loadImage(this, "")
         iv_13.loadBorderImage(this, url2)
+        FrescoTest()
+    }
+
+    private fun FrescoTest(){
+        val simpleDrawView= findViewById(R.id.iv_14) as? SimpleDraweeView
+//        simpleDrawView?.setImageURI(url3)  非动图
+
+        val controller = Fresco.newDraweeControllerBuilder()
+                .setUri(url3)//设置资源地址
+                .setAutoPlayAnimations(true)//设置是否自动播放
+                .build()
+
+        simpleDrawView?.controller = controller  //动图为什么动不了？
+
     }
 
     private fun hasStoragePermission(): Boolean {

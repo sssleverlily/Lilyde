@@ -3,6 +3,8 @@ package com.example.lilyde.lilyde.strategy;
 import android.content.Context;
 import android.widget.ImageView;
 
+import com.example.lilyde.progress.OnProgressListener;
+
 public interface BaseImageLoaderStrategy {
     //无占位图
     void loadImage(String url, ImageView imageView);
@@ -13,9 +15,9 @@ public interface BaseImageLoaderStrategy {
 
     void loadGifImage(String url, int placeholder, ImageView imageView);
 
-    void loadImageWithProgress(String url, ImageView imageView, ProgressLoadListener listener);
+    void loadImageWithProgress(String url, ImageView imageView, OnProgressListener listener);
 
-    void loadGifWithProgress(String url, ImageView imageView, ProgressLoadListener listener);
+    void loadGifWithProgress(String url, ImageView imageView, OnProgressListener listener);
 
     //清除硬盘缓存
     void clearImageDiskCache(final Context context);

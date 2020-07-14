@@ -10,8 +10,58 @@ import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.bumptech.glide.load.resource.gif.GifDrawable;
 import com.bumptech.glide.request.RequestListener;
 import com.bumptech.glide.request.target.Target;
+import com.example.lilyde.progress.OnProgressListener;
 
 public class LilydeImageLoaderStrategy implements  BaseImageLoaderStrategy {
+    @Override
+    public void loadImage(String url, ImageView imageView) {
+
+    }
+
+    @Override
+    public void loadImage(String url, int placeholder, ImageView imageView) {
+
+    }
+
+    @Override
+    public void loadImage(Context context, String url, int placeholder, ImageView imageView) {
+
+    }
+
+    @Override
+    public void loadGifImage(String url, int placeholder, ImageView imageView) {
+
+    }
+
+    @Override
+    public void loadImageWithProgress(String url, ImageView imageView, OnProgressListener listener) {
+
+    }
+
+    @Override
+    public void loadGifWithProgress(String url, ImageView imageView, OnProgressListener listener) {
+
+    }
+
+    @Override
+    public void clearImageDiskCache(Context context) {
+
+    }
+
+    @Override
+    public void clearImageMemoryCache(Context context) {
+
+    }
+
+    @Override
+    public void trimMemory(Context context, int level) {
+
+    }
+
+    @Override
+    public String getCacheSize(Context context) {
+        return null;
+    }
 //    @Override
 //    public void loadImage(String url, int placeholder, ImageView imageView) {
 //        loadNormal(imageView.getContext(), url, placeholder, imageView);
