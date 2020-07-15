@@ -25,6 +25,7 @@ import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
 import com.bumptech.glide.request.RequestListener
 import com.bumptech.glide.request.transition.DrawableCrossFadeFactory
 import com.bumptech.glide.util.Preconditions
+import com.example.lilyde.Lilyde.loadImage
 import com.example.lilyde.R
 import com.example.lilyde.lilyde.cache.DiskCachePool
 import io.reactivex.Observable
@@ -78,6 +79,25 @@ object Lilyde {
                         .imageView(this)
                         .progressListener(onProgressListener)
                         .requestListener(requestListener)
+                        .build())
+    }
+
+    /**
+     * 不要监听的loadimage,监听真的太耗时间啦啊啊啊啊啊啊
+     */
+    @JvmOverloads
+    fun ImageView.clearLoadImage(context: Context, url: String?, @DrawableRes placeHolder: Int = placeHolderImageView){
+        loadImage(context,
+                GlideConfigImpl
+                        .builder()
+                        .url(url)
+                        .isCropCenter(true)
+                        .isCrossFade(true)
+                        .diskCachePool("lily")
+                        .cacheStrategy(1) //line 286
+                        .errorPic(placeHolder)
+                        .placeholder(placeHolder)
+                        .imageView(this)
                         .build())
     }
 

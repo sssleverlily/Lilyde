@@ -43,7 +43,13 @@
             android:id="@+id/iv_1"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:layout_marginBottom="15dp" />
+            android:layout_marginBottom="15dp"
+            android:scaleType="fitXY"/>
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_14"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"/>
 
         <ImageView
             android:id="@+id/iv_2"
@@ -119,10 +125,7 @@
             android:layout_height="200dp"
             android:layout_marginBottom="15dp" />
 
-        <com.facebook.drawee.view.SimpleDraweeView
-            android:id="@+id/iv_14"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"/>
+
 
     </LinearLayout>
 
