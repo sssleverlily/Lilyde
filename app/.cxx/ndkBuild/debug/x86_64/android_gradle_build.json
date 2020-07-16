@@ -1,0 +1,58 @@
+{
+  "buildFiles": [
+    "/Users/ssslever/Desktop/Lilyde/app/src/main/jni/Android.mk",
+    "/Users/ssslever/Desktop/Lilyde/app/src/main/jni/Application.mk"
+  ],
+  "cleanCommands": [
+    "/Users/ssslever/Library/Android/sdk/ndk-bundle/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/Users/ssslever/Desktop/Lilyde/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/Users/ssslever/Desktop/Lilyde/app/src/main/jni/Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/Users/ssslever/Desktop/Lilyde/app/build/intermediates/ndkBuild/debug/obj NDK_LIBS_OUT\u003d/Users/ssslever/Desktop/Lilyde/app/build/intermediates/ndkBuild/debug/lib clean"
+  ],
+  "buildTargetsCommand": "/Users/ssslever/Library/Android/sdk/ndk-bundle/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/Users/ssslever/Desktop/Lilyde/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/Users/ssslever/Desktop/Lilyde/app/src/main/jni/Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/Users/ssslever/Desktop/Lilyde/app/build/intermediates/ndkBuild/debug/obj NDK_LIBS_OUT\u003d/Users/ssslever/Desktop/Lilyde/app/build/intermediates/ndkBuild/debug/lib {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "gif-debug-x86_64": {
+      "buildCommand": "/Users/ssslever/Library/Android/sdk/ndk-bundle/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/Users/ssslever/Desktop/Lilyde/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/Users/ssslever/Desktop/Lilyde/app/src/main/jni/Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/Users/ssslever/Desktop/Lilyde/app/build/intermediates/ndkBuild/debug/obj NDK_LIBS_OUT\u003d/Users/ssslever/Desktop/Lilyde/app/build/intermediates/ndkBuild/debug/lib /Users/ssslever/Desktop/Lilyde/app/build/intermediates/ndkBuild/debug/obj/local/x86_64/libgif.a",
+      "toolchain": "toolchain-x86_64",
+      "abi": "x86_64",
+      "artifactName": "gif",
+      "files": [
+        {
+          "src": "/Users/ssslever/Desktop/Lilyde/app/src/main/jni/giflib/dgif_lib.c",
+          "flags": "-target x86_64-none-linux-android21 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot /Users/ssslever/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -D_FORTIFY_SOURCE\u003d2 -fPIC -O0 -UNDEBUG -fno-limit-debug-info -I/Users/ssslever/Desktop/Lilyde/app/src/main/jni -D__ARM_HAVE_NEON\u003d1 -DANDROID -Werror -Wno-format -Wno-sign-compare -Wno-unused-parameter -DHAVE_CONFIG_H -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "/Users/ssslever/Desktop/Lilyde/app/src/main/jni/giflib/egif_lib.c",
+          "flags": "-target x86_64-none-linux-android21 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot /Users/ssslever/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -D_FORTIFY_SOURCE\u003d2 -fPIC -O0 -UNDEBUG -fno-limit-debug-info -I/Users/ssslever/Desktop/Lilyde/app/src/main/jni -D__ARM_HAVE_NEON\u003d1 -DANDROID -Werror -Wno-format -Wno-sign-compare -Wno-unused-parameter -DHAVE_CONFIG_H -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "/Users/ssslever/Desktop/Lilyde/app/src/main/jni/giflib/gif_err.c",
+          "flags": "-target x86_64-none-linux-android21 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot /Users/ssslever/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -D_FORTIFY_SOURCE\u003d2 -fPIC -O0 -UNDEBUG -fno-limit-debug-info -I/Users/ssslever/Desktop/Lilyde/app/src/main/jni -D__ARM_HAVE_NEON\u003d1 -DANDROID -Werror -Wno-format -Wno-sign-compare -Wno-unused-parameter -DHAVE_CONFIG_H -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "/Users/ssslever/Desktop/Lilyde/app/src/main/jni/giflib/gif_hash.c",
+          "flags": "-target x86_64-none-linux-android21 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot /Users/ssslever/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -D_FORTIFY_SOURCE\u003d2 -fPIC -O0 -UNDEBUG -fno-limit-debug-info -I/Users/ssslever/Desktop/Lilyde/app/src/main/jni -D__ARM_HAVE_NEON\u003d1 -DANDROID -Werror -Wno-format -Wno-sign-compare -Wno-unused-parameter -DHAVE_CONFIG_H -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "/Users/ssslever/Desktop/Lilyde/app/src/main/jni/giflib/gifalloc.c",
+          "flags": "-target x86_64-none-linux-android21 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot /Users/ssslever/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -D_FORTIFY_SOURCE\u003d2 -fPIC -O0 -UNDEBUG -fno-limit-debug-info -I/Users/ssslever/Desktop/Lilyde/app/src/main/jni -D__ARM_HAVE_NEON\u003d1 -DANDROID -Werror -Wno-format -Wno-sign-compare -Wno-unused-parameter -DHAVE_CONFIG_H -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "/Users/ssslever/Desktop/Lilyde/app/src/main/jni/giflib/openbsd-reallocarray.c",
+          "flags": "-target x86_64-none-linux-android21 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot /Users/ssslever/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -D_FORTIFY_SOURCE\u003d2 -fPIC -O0 -UNDEBUG -fno-limit-debug-info -I/Users/ssslever/Desktop/Lilyde/app/src/main/jni -D__ARM_HAVE_NEON\u003d1 -DANDROID -Werror -Wno-format -Wno-sign-compare -Wno-unused-parameter -DHAVE_CONFIG_H -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "/Users/ssslever/Desktop/Lilyde/app/src/main/jni/giflib/quantize.c",
+          "flags": "-target x86_64-none-linux-android21 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot /Users/ssslever/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -D_FORTIFY_SOURCE\u003d2 -fPIC -O0 -UNDEBUG -fno-limit-debug-info -I/Users/ssslever/Desktop/Lilyde/app/src/main/jni -D__ARM_HAVE_NEON\u003d1 -DANDROID -Werror -Wno-format -Wno-sign-compare -Wno-unused-parameter -DHAVE_CONFIG_H -Wformat -Werror\u003dformat-security"
+        }
+      ],
+      "output": "/Users/ssslever/Desktop/Lilyde/app/build/intermediates/ndkBuild/debug/obj/local/x86_64/libgif.a"
+    }
+  },
+  "toolchains": {
+    "toolchain-x86_64": {
+      "cCompilerExecutable": "/Users/ssslever/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang"
+    }
+  },
+  "cFileExtensions": [
+    "c"
+  ],
+  "cppFileExtensions": []
+}
