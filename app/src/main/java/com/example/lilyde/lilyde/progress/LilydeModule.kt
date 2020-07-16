@@ -5,7 +5,6 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.GlideBuilder
 import com.bumptech.glide.Registry
 import com.bumptech.glide.annotation.GlideModule
-import com.bumptech.glide.load.DecodeFormat
 import com.bumptech.glide.load.engine.bitmap_recycle.LruBitmapPool
 import com.bumptech.glide.load.engine.cache.InternalCacheDiskCacheFactory
 import com.bumptech.glide.load.engine.cache.LruResourceCache
@@ -13,6 +12,8 @@ import com.bumptech.glide.load.engine.cache.MemorySizeCalculator
 import com.bumptech.glide.load.model.GlideUrl
 import com.bumptech.glide.module.AppGlideModule
 import com.example.lilyde.http.OkHttpUrlLoader
+import com.example.lilyde.lilyde.util.FrameSequenceDecoder
+import com.example.lilyde.lilyde.util.FrameSequenceDrawable
 import java.io.InputStream
 
 /**
@@ -37,6 +38,8 @@ class LilydeModule : AppGlideModule() {
 
     override fun registerComponents(context: Context, glide: Glide, registry: Registry) {
         registry.replace(GlideUrl::class.java, InputStream::class.java, OkHttpUrlLoader.Factory(ProgressManager.okHttpClient))
+       // registry.prepend(Registry.BUCKET_GIF, InputStream::class.java, FrameSequenceDrawable::class.java, FrameSequenceDecoder(glide.bitmapPool))
+
     }
 
     override fun isManifestParsingEnabled(): Boolean {

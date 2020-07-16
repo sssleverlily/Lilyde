@@ -21,7 +21,7 @@
                 android:id="@+id/iv_0"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:scaleType="fitXY" />
+                android:scaleType="fitCenter" />
 
             <com.example.lilyde.progress.CircleProgressView
                 android:id="@+id/circleProgressView"
@@ -44,7 +44,7 @@
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:layout_marginBottom="15dp"
-            android:scaleType="fitXY"/>
+            android:scaleType="fitCenter"/>
 
         <com.facebook.drawee.view.SimpleDraweeView
             android:id="@+id/iv_14"
