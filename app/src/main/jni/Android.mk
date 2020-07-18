@@ -17,7 +17,7 @@
 
 LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
-LOCAL_MODULE 	:= libgif
+LOCAL_MODULE := gif
 LOCAL_SRC_FILES := \
  giflib/dgif_lib.c \
  giflib/egif_lib.c \
@@ -34,7 +34,7 @@ LOCAL_CFLAGS += \
     -Wno-unused-parameter \
     -DHAVE_CONFIG_H \
 
-LOCAL_SDK_VERSION := 10
+LOCAL_SDK_VERSION := 8
 
 include $(BUILD_STATIC_LIBRARY)
 
@@ -48,7 +48,7 @@ LOCAL_LDFLAGS := -llog -ljnigraphics
 LOCAL_C_INCLUDES := \
  giflib
 
-LOCAL_MODULE := libframesequence
+LOCAL_MODULE := framesequence
 LOCAL_SRC_FILES := \
  BitmapDecoderJNI.cpp \
  FrameSequence.cpp \
@@ -72,6 +72,6 @@ LOCAL_CFLAGS += \
     -Wno-overloaded-virtual \
     -fvisibility=hidden \
 
-LOCAL_SDK_VERSION := 10
-APP_ALLOW_MISSING_DEPS :=true
+LOCAL_SDK_VERSION := 8
+
 include $(BUILD_SHARED_LIBRARY)

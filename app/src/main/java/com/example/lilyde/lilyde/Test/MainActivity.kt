@@ -36,6 +36,7 @@ import com.example.lilyde.transformation.GrayscaleTransformation
 import com.example.lilyde.transformation.RoundedCornersTransformation
 import com.facebook.drawee.backends.pipeline.Fresco
 import com.facebook.drawee.view.SimpleDraweeView
+import com.squareup.picasso.Picasso
 import pub.devrel.easypermissions.AfterPermissionGranted
 import pub.devrel.easypermissions.EasyPermissions
 import java.util.*
@@ -56,6 +57,7 @@ class MainActivity : AppCompatActivity(){
         FrescoTest()
         glideTest()
         lilydeTest()
+        picassoTest()
         //circleProgressView.visibility = View.VISIBLE
 
 //        iv_0.loadImage(this, url3,onProgressListener = object : OnProgressListener {
@@ -131,6 +133,19 @@ class MainActivity : AppCompatActivity(){
         val freeHeapSize = Runtime.getRuntime().freeMemory()
         val heapSize = totalHeapSize - freeHeapSize
         Log.e("lilyz_glide",(endTime - startTime).toString()+"  java_heap:"+heapSize/10000f)
+    }
+
+    private fun picassoTest(){
+        val startTime = Date().time
+        Picasso.with(this)
+                .load(url3)
+                .into(iv_2)
+        val endTime = Date().time
+        val totalHeapSize = Runtime.getRuntime().totalMemory()
+        val freeHeapSize = Runtime.getRuntime().freeMemory()
+        val heapSize = totalHeapSize - freeHeapSize
+        Log.e("lilyz_picasso",(endTime - startTime).toString()+"  java_heap:"+heapSize/10000f)
+
     }
 
     private fun lilydeTest(){

@@ -1,4 +1,4 @@
-APP_PLATFORM := android-8
+APP_PLATFORM := android-16
 APP_MODULES := libgif
 APP_ABI := armeabi-v7a
 LOCAL_ARM_NEON=true
