@@ -30,6 +30,7 @@ import com.example.lilyde.Lilyde.loadImageWithTransformation
 import com.example.lilyde.Lilyde.loadResizeXYImage
 import com.example.lilyde.Lilyde.loadRoundCornerImage
 import com.example.lilyde.Lilyde.clearLoadImage
+import com.example.lilyde.lilyde.util.FrameSequenceDrawable
 import com.example.lilyde.progress.OnProgressListener
 import com.example.lilyde.transformation.BlurTransformation
 import com.example.lilyde.transformation.GrayscaleTransformation
@@ -58,6 +59,12 @@ class MainActivity : AppCompatActivity(){
         glideTest()
         lilydeTest()
         picassoTest()
+
+        //注解
+        Glide.with(this)
+                .asGif()
+                .load(url3)
+                .into(iv_3)
         //circleProgressView.visibility = View.VISIBLE
 
 //        iv_0.loadImage(this, url3,onProgressListener = object : OnProgressListener {

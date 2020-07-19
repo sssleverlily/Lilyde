@@ -38,7 +38,7 @@ class LilydeModule : AppGlideModule() {
 
     override fun registerComponents(context: Context, glide: Glide, registry: Registry) {
         registry.replace(GlideUrl::class.java, InputStream::class.java, OkHttpUrlLoader.Factory(ProgressManager.okHttpClient))
-       //registry.prepend(Registry.BUCKET_GIF, InputStream::class.java, FrameSequenceDrawable::class.java, FrameSequenceDecoder(glide.bitmapPool))
+        registry.prepend(Registry.BUCKET_GIF, InputStream::class.java, FrameSequenceDrawable::class.java, FrameSequenceDecoder(glide.bitmapPool))
 
     }
 
