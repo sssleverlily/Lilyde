@@ -10,6 +10,9 @@ import android.util.Log
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import coil.Coil
+import coil.api.load
+import coil.transform.CircleCropTransformation
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.DataSource
 import com.bumptech.glide.load.engine.GlideException
@@ -26,6 +29,7 @@ import com.example.lilyde.Lilyde.loadCircleImage
 import com.example.lilyde.Lilyde.loadCircleWithBorderImage
 import com.example.lilyde.Lilyde.loadGrayImage
 import com.example.lilyde.Lilyde.loadImage
+import com.example.lilyde.Lilyde.clearLoadDrawble
 import com.example.lilyde.Lilyde.loadImageWithTransformation
 import com.example.lilyde.Lilyde.loadResizeXYImage
 import com.example.lilyde.Lilyde.loadRoundCornerImage
@@ -47,6 +51,8 @@ class MainActivity : AppCompatActivity(){
     var url2 = "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=579539400,2248223712&fm=26&gp=0.jpg"
     var url3 = "http://img.mp.itc.cn/upload/20170311/48180d37e4474628900d058f3cc5ee7d_th.gif"
     var url4 = "http://img.mp.itc.cn/upload/20170311/33f2b7f7ffb04ecb81e42405e20b3fdc_th.gif"
+    var url5 = "/Users/ssslever/Desktop/timg.jpeg"
+    var url6 = "/Users/ssslever/Desktop/Lilyde/app/src/main/res/drawable/trees_on_mountain.jpg"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         Fresco.initialize(this)
@@ -55,14 +61,15 @@ class MainActivity : AppCompatActivity(){
     }
 
     private fun initView() {
-        FrescoTest()
-        glideTest()
+//        FrescoTest()
+//        glideTest()
         lilydeTest()
-        picassoTest()
+//        picassoTest()
+        loadFromMemory()
 
         //注解
         Glide.with(this)
-                .asGif()
+                .`as`(FrameSequenceDrawable::class.java)
                 .load(url3)
                 .into(iv_3)
         //circleProgressView.visibility = View.VISIBLE
@@ -134,7 +141,9 @@ class MainActivity : AppCompatActivity(){
 
     private fun glideTest(){
         val startTime = Date().time
-        Glide.with(this).load(url3).into(iv_1)
+        Glide.with(this)
+                .load(url3)
+                .into(iv_1)
         val endTime = Date().time
         val totalHeapSize = Runtime.getRuntime().totalMemory()
         val freeHeapSize = Runtime.getRuntime().freeMemory()
@@ -158,17 +167,17 @@ class MainActivity : AppCompatActivity(){
     private fun lilydeTest(){
         circleProgressView.visibility = View.VISIBLE
         val startTime = Date().time
-//        iv_0.loadImage(this, url3,onProgressListener = object : OnProgressListener {
+//        iv_0.loadImage(this, url1,onProgressListener = object : OnProgressListener {
 //            override fun onProgress(isComplete: Boolean, percentage: Int, bytesRead: Long, totalBytes: Long) {
 //                // 跟踪进度
 //                if (isComplete) {
 //                    //网络太快看不见进度条，先设置看见
-//                    circleProgressView.visibility = View.VISIBLE
+//                    circleProgressView.visibility = View.GONE
 //                }
 //                circleProgressView.progress = percentage
 //            }
 //        })
-        iv_0.clearLoadImage(this,url3)
+        iv_0.loadImage(this,url1)
         val endTime = Date().time
         val totalHeapSize = Runtime.getRuntime().totalMemory()
         val freeHeapSize = Runtime.getRuntime().freeMemory()
@@ -202,7 +211,11 @@ class MainActivity : AppCompatActivity(){
 
     //想看一下从内存加载是什么情况
     fun loadFromMemory(){
-        
+        iv_1.load(url1){
+            crossfade(true)
+        }
+
+
     }
 
 }

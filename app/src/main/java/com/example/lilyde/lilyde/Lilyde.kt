@@ -101,6 +101,15 @@ object Lilyde {
                         .build())
     }
 
+    @JvmOverloads
+    fun ImageView.clearLoadDrawble(context: Context, @RawRes @DrawableRes drawableId: Int){
+        loadImage(context, GlideConfigImpl
+                .builder()
+                .drawableId(drawableId)
+                .imageView(this)
+                .build())
+    }
+
     /**
      * 缓存
      */
@@ -421,5 +430,14 @@ object Lilyde {
                 .observeOn(AndroidSchedulers.mainThread()) //最后切换主线程提示结果
                 .subscribe({ Toast.makeText(context, R.string.easy_glide_save_succss, Toast.LENGTH_SHORT).show() }
                 ) { Toast.makeText(context, R.string.easy_glide_save_failed, Toast.LENGTH_SHORT).show() }
+    }
+
+    /**
+     * 别的地方都是通过url拉一张已经生成好的图片。
+     * 公众号封面这里封面要求跟着公众号最新一篇发布的文章变化封面，变化及其频繁，不可能做一张生成好的图片去拉，只能实时生成。
+     * 实时生成放后台，对服务器压力很大，所以改成客户端拉取信息实时生成。
+     */
+    fun loadImgFromUrl(){
+
     }
 }

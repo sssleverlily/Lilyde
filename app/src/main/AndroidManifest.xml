@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.lilyde">
-    <uses-sdk android:minSdkVersion="16"
-        tools:ignore="GradleOverrides" />
+<!--    <uses-sdk android:minSdkVersion="16"-->
+<!--        tools:ignore="GradleOverrides" />-->
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
