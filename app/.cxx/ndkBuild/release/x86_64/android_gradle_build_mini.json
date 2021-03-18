@@ -1,18 +1,18 @@
 {
   "buildFiles": [
-    "/Users/ssslever/Desktop/Lilyde/app/src/main/jni/Android.mk",
-    "/Users/ssslever/Desktop/Lilyde/app/src/main/jni/Application.mk"
+    "/Users/ssslever/Lilyde/app/src/main/jni/Android.mk",
+    "/Users/ssslever/Lilyde/app/src/main/jni/Application.mk"
   ],
   "cleanCommands": [
-    "/Users/ssslever/Library/Android/sdk/ndk-bundle/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/Users/ssslever/Desktop/Lilyde/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/Users/ssslever/Desktop/Lilyde/app/src/main/jni/Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/Users/ssslever/Desktop/Lilyde/app/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003d/Users/ssslever/Desktop/Lilyde/app/build/intermediates/ndkBuild/release/lib clean"
+    "/Users/ssslever/Library/Android/sdk/ndk-bundle/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/Users/ssslever/Lilyde/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/Users/ssslever/Lilyde/app/src/main/jni/Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/Users/ssslever/Lilyde/app/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003d/Users/ssslever/Lilyde/app/build/intermediates/ndkBuild/release/lib clean"
   ],
-  "buildTargetsCommand": "/Users/ssslever/Library/Android/sdk/ndk-bundle/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/Users/ssslever/Desktop/Lilyde/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/Users/ssslever/Desktop/Lilyde/app/src/main/jni/Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/Users/ssslever/Desktop/Lilyde/app/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003d/Users/ssslever/Desktop/Lilyde/app/build/intermediates/ndkBuild/release/lib {LIST_OF_TARGETS_TO_BUILD}",
+  "buildTargetsCommand": "/Users/ssslever/Library/Android/sdk/ndk-bundle/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/Users/ssslever/Lilyde/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/Users/ssslever/Lilyde/app/src/main/jni/Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/Users/ssslever/Lilyde/app/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003d/Users/ssslever/Lilyde/app/build/intermediates/ndkBuild/release/lib {LIST_OF_TARGETS_TO_BUILD}",
   "libraries": {
     "gif-release-x86_64": {
       "artifactName": "gif",
-      "buildCommand": "/Users/ssslever/Library/Android/sdk/ndk-bundle/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/Users/ssslever/Desktop/Lilyde/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/Users/ssslever/Desktop/Lilyde/app/src/main/jni/Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/Users/ssslever/Desktop/Lilyde/app/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003d/Users/ssslever/Desktop/Lilyde/app/build/intermediates/ndkBuild/release/lib /Users/ssslever/Desktop/Lilyde/app/build/intermediates/ndkBuild/release/obj/local/x86_64/libgif.a",
+      "buildCommand": "/Users/ssslever/Library/Android/sdk/ndk-bundle/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/Users/ssslever/Lilyde/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/Users/ssslever/Lilyde/app/src/main/jni/Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/Users/ssslever/Lilyde/app/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003d/Users/ssslever/Lilyde/app/build/intermediates/ndkBuild/release/lib /Users/ssslever/Lilyde/app/build/intermediates/ndkBuild/release/obj/local/x86_64/libgif.a",
       "abi": "x86_64",
-      "output": "/Users/ssslever/Desktop/Lilyde/app/build/intermediates/ndkBuild/release/obj/local/x86_64/libgif.a"
+      "output": "/Users/ssslever/Lilyde/app/build/intermediates/ndkBuild/release/obj/local/x86_64/libgif.a"
     }
   }
 }

@@ -33,7 +33,7 @@ class CircleProgressView @JvmOverloads constructor(context: Context?, attrs: Att
     private var mRadius = dp2px(getContext(), 20f) // 半径
     private var mStartArc =0 // 起始角度 = 0
     private var mInnerBackgroundColor = 0 // 内部背景填充颜色 = 0
-    private var mProgressStyle = ProgressStyle.NORMAL // 进度风格
+    private var mProgressStyle = ProgressStyle.FILL_IN // 进度风格
     private var mInnerPadding = dp2px(getContext(), 1f) // 内部圆与外部圆间距
     private var mOuterColor = 0 // 外部圆环颜色 = 0
     private var needDrawInnerBackground =false // 是否需要绘制内部背景 = false

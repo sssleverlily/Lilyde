@@ -82,7 +82,7 @@ class MainActivity : AppCompatActivity(){
                 // 跟踪进度
                 if (isComplete) {
                     //网络太快看不见进度条，先设置看见
-                    circleProgressView.visibility = View.GONE
+                    circleProgressView.visibility = View.VISIBLE
                 }
                 circleProgressView.progress = percentage
             }

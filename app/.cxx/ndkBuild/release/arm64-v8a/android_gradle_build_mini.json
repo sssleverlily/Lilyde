@@ -1,18 +1,18 @@
 {
   "buildFiles": [
-    "/Users/ssslever/Desktop/Lilyde/app/src/main/jni/Android.mk",
-    "/Users/ssslever/Desktop/Lilyde/app/src/main/jni/Application.mk"
+    "/Users/ssslever/Lilyde/app/src/main/jni/Android.mk",
+    "/Users/ssslever/Lilyde/app/src/main/jni/Application.mk"
   ],
   "cleanCommands": [
-    "/Users/ssslever/Library/Android/sdk/ndk-bundle/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/Users/ssslever/Desktop/Lilyde/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/Users/ssslever/Desktop/Lilyde/app/src/main/jni/Application.mk APP_ABI\u003darm64-v8a NDK_ALL_ABIS\u003darm64-v8a NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/Users/ssslever/Desktop/Lilyde/app/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003d/Users/ssslever/Desktop/Lilyde/app/build/intermediates/ndkBuild/release/lib clean"
+    "/Users/ssslever/Library/Android/sdk/ndk-bundle/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/Users/ssslever/Lilyde/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/Users/ssslever/Lilyde/app/src/main/jni/Application.mk APP_ABI\u003darm64-v8a NDK_ALL_ABIS\u003darm64-v8a NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/Users/ssslever/Lilyde/app/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003d/Users/ssslever/Lilyde/app/build/intermediates/ndkBuild/release/lib clean"
   ],
-  "buildTargetsCommand": "/Users/ssslever/Library/Android/sdk/ndk-bundle/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/Users/ssslever/Desktop/Lilyde/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/Users/ssslever/Desktop/Lilyde/app/src/main/jni/Application.mk APP_ABI\u003darm64-v8a NDK_ALL_ABIS\u003darm64-v8a NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/Users/ssslever/Desktop/Lilyde/app/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003d/Users/ssslever/Desktop/Lilyde/app/build/intermediates/ndkBuild/release/lib {LIST_OF_TARGETS_TO_BUILD}",
+  "buildTargetsCommand": "/Users/ssslever/Library/Android/sdk/ndk-bundle/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/Users/ssslever/Lilyde/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/Users/ssslever/Lilyde/app/src/main/jni/Application.mk APP_ABI\u003darm64-v8a NDK_ALL_ABIS\u003darm64-v8a NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/Users/ssslever/Lilyde/app/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003d/Users/ssslever/Lilyde/app/build/intermediates/ndkBuild/release/lib {LIST_OF_TARGETS_TO_BUILD}",
   "libraries": {
     "gif-release-arm64-v8a": {
       "artifactName": "gif",
-      "buildCommand": "/Users/ssslever/Library/Android/sdk/ndk-bundle/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/Users/ssslever/Desktop/Lilyde/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/Users/ssslever/Desktop/Lilyde/app/src/main/jni/Application.mk APP_ABI\u003darm64-v8a NDK_ALL_ABIS\u003darm64-v8a NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/Users/ssslever/Desktop/Lilyde/app/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003d/Users/ssslever/Desktop/Lilyde/app/build/intermediates/ndkBuild/release/lib /Users/ssslever/Desktop/Lilyde/app/build/intermediates/ndkBuild/release/obj/local/arm64-v8a/libgif.a",
+      "buildCommand": "/Users/ssslever/Library/Android/sdk/ndk-bundle/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/Users/ssslever/Lilyde/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/Users/ssslever/Lilyde/app/src/main/jni/Application.mk APP_ABI\u003darm64-v8a NDK_ALL_ABIS\u003darm64-v8a NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/Users/ssslever/Lilyde/app/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003d/Users/ssslever/Lilyde/app/build/intermediates/ndkBuild/release/lib /Users/ssslever/Lilyde/app/build/intermediates/ndkBuild/release/obj/local/arm64-v8a/libgif.a",
       "abi": "arm64-v8a",
-      "output": "/Users/ssslever/Desktop/Lilyde/app/build/intermediates/ndkBuild/release/obj/local/arm64-v8a/libgif.a"
+      "output": "/Users/ssslever/Lilyde/app/build/intermediates/ndkBuild/release/obj/local/arm64-v8a/libgif.a"
     }
   }
 }
